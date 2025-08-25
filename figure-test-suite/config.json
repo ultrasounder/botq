@@ -1,0 +1,31 @@
+{
+    "instruments": {
+        "torso_eol": {
+            "power_supply": "USB0::0x0957::0x2307::MY53001234::INSTR",
+            "dmm": "USB0::0x0957::0x0607::MY47001234::INSTR",
+            "oscilloscope": "USB0::0x0957::0x1796::MY55001234::INSTR",
+            "electronic_load": "USB0::0x0957::0x2207::MY54001234::INSTR"
+        },
+        "actuator_pcba": {
+            "power_supply": "USB0::0x0957::0x2307::MY53001234::INSTR",
+            "dmm": "USB0::0x0957::0x0607::MY47001234::INSTR",
+            "oscilloscope": "USB0::0x0957::0x1796::MY55001234::INSTR",
+            "current_probe": "USB0::0x0957::0x2807::MY56001234::INSTR"
+        }
+    },
+    "test_limits": {
+        "Torso_EOL": {
+            "Power_Sequencing": {"min_value": 45.6, "max_value": 50.4, "nominal": 48.0, "units": "V"},
+            "Voltage_Regulation": {"min_value": 0, "max_value": 1.0, "nominal": 0.5, "units": "%"},
+            "BMS_Communication": {"min_value": 99.0, "max_value": 100.0, "nominal": 100.0, "units": "%"},
+            "Thermal_Performance": {"min_value": 0, "max_value": 85.0, "nominal": 65.0, "units": "°C"},
+            "Emergency_Stop": {"min_value": 0, "max_value": 100.0, "nominal": 50.0, "units": "ms"}
+        },
+        "Actuator_PCBA": {
+            "Supply_Current_Idle": {"min_value": 0.3, "max_value": 0.5, "nominal": 0.4, "units": "A"},
+            "PWM_Generation": {"min_value": 19800, "max_value": 20200, "nominal": 20000, "units": "Hz"},
+            "Current_Sensing": {"min_value": 0, "max_value": 1.0, "nominal": 0.5, "units": "%"},
+            "Gate_Driver": {"min_value": 0, "max_value": 100, "nominal": 50, "units": "ns"}
+        }
+    }
+}
